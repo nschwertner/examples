@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="fhir-client.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+<!--Patient id = 89f13c16-33af-44d5-9deb-7d0180fee5a9-->
+<!--Service url = http://hspc.isalusconsulting.com/open-hsp-api-->
+
+<script>
+
+    FHIR.oauth2.ready(function(fhirClient){
+        var patient = fhirClient.context.patient;
+
+        patient.read()
+                .then(function(p){
+                    var name = p.name[0];
+                    var formattedName = name.given[0] + " " + name.family;
+                    $("#patientName").text(formattedName);
+                });
+
+        patient.Observation.where
+                .code("8302-2")
+                .search()
+                .then(function(obsSearchResults){
+                    obsSearchResults.forEach(function(obs){
+                        var obsRow = "<tr><td>" + obs.appliesDateTime + "</td>" + "<td>" + obs.valueQuantity.value + obs.valueQuantity.units + "</td></tr>"
+                        $("#obsTable").append(obsRow);
+                    });
+                });
+
+    });
+</script>
+
+<h2 id="patientName"></h2>
+<table id="obsTable">
+    <tr><th>Date</th><th>Value</th></tr>
+</table>
+</body>
+
+</html>
