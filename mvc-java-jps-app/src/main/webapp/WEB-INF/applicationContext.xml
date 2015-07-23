@@ -43,7 +43,7 @@
     </bean>
 
     <bean id="codeFlowAuthorizer" class="org.hspconsortium.client.auth.codeflow.CodeFlowAuthorizer">
-        <property name="fhirClientContextHolder" ref="fhirSessionContextHolder" />
+        <property name="fhirSessionContextHolder" ref="fhirSessionContextHolder" />
         <property name="authorizationEndpointsProvider" ref="authorizationEndpointsProvider" />
         <property name="stateProvider" ref="stateProvider" />
     </bean>
@@ -55,7 +55,7 @@
         <constructor-arg name="scope" ref="scope"/>
         <property name="codeFlowAuthorizer" ref="codeFlowAuthorizer"/>
         <property name="accessTokenProvider" ref="accessTokenProvider"/>
-        <property name="fhirClientContextHolder" ref="fhirSessionContextHolder"/>
+        <property name="fhirSessionContextHolder" ref="fhirSessionContextHolder"/>
     </bean>
 
 </beans>
