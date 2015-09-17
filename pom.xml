@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.hspconsortium</groupId>
+    <artifactId>hsp-examples</artifactId>
+    <version>0.9-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Health Services Platform Consortium - HSP Client Examples</name>
+    <description>HSP Client Examples Aggregator POM</description>
+    <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
+
+    <properties>
+        <java.version>1.7</java.version>
+        <hsp.client.version>0.9-SNAPSHOT</hsp.client.version>
+        <hapi.version>1.1</hapi.version>
+        <thymeleaf.version>2.1.4.RELEASE</thymeleaf.version>
+        <google.gson.version>2.2.4</google.gson.version>
+        <apache.httpcomponents.version>4.3.6</apache.httpcomponents.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <commons-io.version>2.4</commons-io.version>
+        <openid.connect.client.version>1.1.13</openid.connect.client.version>
+        <springframework.security.oauth.version>2.0.6.RELEASE</springframework.security.oauth.version>
+        <springframework.version>4.1.7.RELEASE</springframework.version>
+        <javax.servlet.version>3.0.1</javax.servlet.version>
+        <junit.version>4.8.2</junit.version>
+        <xerces.version>2.6.2-jaxb-1.0.6</xerces.version>
+        <javax.inject.version>1</javax.inject.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <nimbus-jose-jwt.version>3.9</nimbus-jose-jwt.version>
+        <commons-validator.version>1.4.1</commons-validator.version>
+        <oro.version>2.0.8</oro.version>
+        <taglibs.version>1.1.2</taglibs.version>
+        <javax.servlet.jsp.version>2.2</javax.servlet.jsp.version>
+        <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
+    </properties>
+
+    <modules>
+        <module>java-client-example-spring-mvc</module>
+        <module>java-client-example-spring-ioc</module>
+        <module>java-client-example-resource-extension</module>
+        <module>java-client-example-standalone-clinician-confidential-webapp</module>
+        <module>java-client-example-standalone-patient-confidential-webapp</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
