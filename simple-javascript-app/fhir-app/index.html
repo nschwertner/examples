@@ -36,7 +36,7 @@
                 .search()
                 .then(function(obsSearchResults){
                     obsSearchResults.forEach(function(obs){
-                        var obsRow = "<tr><td>" + obs.appliesDateTime + "</td>" + "<td>" + obs.valueQuantity.value + obs.valueQuantity.units + "</td></tr>"
+                        var obsRow = "<tr><td>" + obs.effectiveDateTime + "</td>" + "<td>" + obs.valueQuantity.value + obs.valueQuantity.unit + "</td></tr>"
                         $("#obsTable").append(obsRow);
                     });
                 });

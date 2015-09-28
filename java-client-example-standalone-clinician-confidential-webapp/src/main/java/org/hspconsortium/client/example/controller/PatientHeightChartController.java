@@ -71,7 +71,7 @@ public class PatientHeightChartController {
 
         List<Height> heights = new ArrayList<>();
         for (BundleEntry entry : results.getEntries()) {
-            String date = ((DateTimeDt) ((Observation) entry.getResource()).getApplies()).getValueAsString();
+            String date = ((DateTimeDt) ((Observation) entry.getResource()).getEffective()).getValueAsString();
             String height = ((QuantityDt) ((Observation) entry.getResource()).getValue()).getValue().toPlainString();
             heights.add(new Height(height, date));
         }

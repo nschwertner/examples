@@ -64,7 +64,7 @@ public class WelcomeController {
 
         List<Height> heights = new ArrayList<>();
         for (Observation heightObservation : heightObservations) {
-            String date = ((DateTimeDt) heightObservation.getApplies()).getValueAsString();
+            String date = ((DateTimeDt) heightObservation.getEffective()).getValueAsString();
             String height = ((QuantityDt) heightObservation.getValue()).getValue().toPlainString();
             heights.add(new Height(height, date));
         }
