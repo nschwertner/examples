@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.hspconsortium</groupId>
             <artifactId>hsp-java-client</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>${hsp.client.version}</version>
         </dependency>
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>
