@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="MyDiastolicBloodPressure"/>
-    <url value="https://hspc.isalusconsulting.com/dstu2/open-hsp-reference-api/data/StructureDefinition/MyDiastolicBloodPressure"/>
+    <url value="https://sandbox.hspconsortium.com/dstu2/open-hsp-reference-api/data/StructureDefinition/MyDiastolicBloodPressure"/>
     <name value="HSPC Diastolic Blood Pressure"/>
     <status value="draft"/>
     <date value="2015-07-20"/>
@@ -14,7 +14,7 @@
     <constrainedType value="Observation"/>
 -->
     <abstract value="false"/>
-    <base value="https://hspc.isalusconsulting.com/dstu2/open-hsp-reference-api/data/StructureDefinition/DiastolicBloodPressure"/>
+    <base value="https://sandbox.hspconsortium.com/dstu2/open-hsp-reference-api/data/StructureDefinition/DiastolicBloodPressure"/>
     <snapshot>
         <element>
             <path value="Observation"/>

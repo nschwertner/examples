@@ -13,10 +13,10 @@
             text-align: left;
         }
     </style>
-    <title>Java Client Example</title>
+    <title>Java Client Example - Standalone Clinician Confidential Webapp</title>
 </head>
 <body>
-<h2>${patientFullName}</h2>
+<h2>${patientFullName} Height Chart</h2>
 
 <c:if test="${not empty heights}">
 <div>

@@ -49,6 +49,11 @@ public class AppConfig {
     Environment env;
 
     @Bean
+    public String fhirServicesUrl() {
+        return env.getProperty("example.fhirServicesUrl");
+    }
+
+    @Bean
     public String clientId() {
         return env.getProperty("example.clientId");
     }
@@ -102,6 +107,7 @@ public class AppConfig {
 
     @Bean
     public String proxyHost() {
+        //To Use With Proxy
         //-Dhttp.proxyHost=proxy.host.com -Dhttp.proxyPort=8080  -Dhttp.proxyUser=username -Dhttp.proxyPassword=password
         return System.getProperty("http.proxyHost", System.getProperty("https.proxyHost"));
     }
@@ -125,7 +131,6 @@ public class AppConfig {
         }
         return hapiFhirContext;
     }
-
 
     @Bean
     public FhirEndpointsProvider fhirEndpointsProvider(FhirContext fhirContext) {
