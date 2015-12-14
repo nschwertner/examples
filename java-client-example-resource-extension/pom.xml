@@ -12,7 +12,7 @@
     <artifactId>hsp-client-profile-extension-example</artifactId>
     <packaging>jar</packaging>
 
-    <name>Health Services Platform Consortium - HSP Examples - Resource Extension</name>
+    <name>HSP Examples - Resource Extension</name>
     <description>HSP Examples</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 

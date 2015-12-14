@@ -6,7 +6,7 @@
     <version>0.9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Health Services Platform Consortium - HSP Client Examples</name>
+    <name>HSP Examples - Parent</name>
     <description>HSP Client Examples Aggregator POM</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 

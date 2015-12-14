@@ -12,7 +12,7 @@
     <artifactId>hsp-client-ioc-example</artifactId>
     <packaging>jar</packaging>
 
-    <name>Health Services Platform Consortium - HSP Examples - Spring IOC</name>
+    <name>HSP Examples - Spring IOC</name>
     <description>HSP Examples</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 
