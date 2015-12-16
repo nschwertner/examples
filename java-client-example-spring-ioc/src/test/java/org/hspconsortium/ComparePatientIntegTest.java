@@ -39,7 +39,7 @@ public class ComparePatientIntegTest {
                 new AnnotationConfigApplicationContext(Application.class);
         PatientCompareService patientCompareService = context.getBean(PatientCompareService.class);
 
-        String patientId = "ID9995679";
+        String patientId = "COREPATIENT1";
 
         int result = patientCompareService.comparePatientName(patientId);
         System.out.println("Compare result: " + result);

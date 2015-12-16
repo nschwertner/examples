@@ -33,7 +33,7 @@ public class Application {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(Application.class);
 
-        String patientId = "ID9995679";
+        String patientId = "COREPATIENT1";
 
         // get the PatientCompareService
         System.out.println("Getting PatientCompareService...");
