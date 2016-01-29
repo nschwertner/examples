@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="diastolicbloodpressure"/>
-    <url value="http://localhost:8080/hsp-reference-api/data/StructureDefinition/systolicbloodpressure"/>
+    <url value="http://localhost:8080/hspc-reference-api/data/StructureDefinition/systolicbloodpressure"/>
     <name value="HSPC Systolic Blood Pressure"/>
     <status value="draft"/>
     <publisher value="HSPC"/>

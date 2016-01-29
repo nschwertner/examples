@@ -42,7 +42,7 @@ import java.net.ProxySelector;
 import java.util.Properties;
 
 public class ProxyConfigurationTest {
-    private static final String JSON_WEB_KEY_SET_URL = "https://sandbox.hspconsortium.com/dstu2/hsp-reference-authorization/jwk";
+    private static final String JSON_WEB_KEY_SET_URL = "https://sandbox.hspconsortium.com/dstu2/hspc-reference-authorization/jwk";
     private static final int TIMEOUT = 600;
 
     @Before

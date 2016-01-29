@@ -7,9 +7,9 @@ INSERT INTO client_details (client_id, client_name, client_secret, access_token_
   ('test_client', 'Test', 'secret', 86400, 'SECRET_BASIC');
 
 INSERT INTO client_redirect_uri (owner_id, redirect_uri) VALUES
-  ((SELECT id from client_details where client_id = 'test_client'), 'http://localhost:8080/hsp-java-client-example-spring-mvc/launch/redirect'),
-  ((SELECT id from client_details where client_id = 'test_client'), 'http://54.213.219.198:9080/uat/hsp-java-client-example-spring-mvc/launch/redirect'),
-  ((SELECT id from client_details where client_id = 'test_client'), 'https://sandbox.hspconsortium.org/hsp-java-client-example-spring-mvc/launch/redirect');
+  ((SELECT id from client_details where client_id = 'test_client'), 'http://localhost:8080/hspc-java-client-example-spring-mvc/launch/redirect'),
+  ((SELECT id from client_details where client_id = 'test_client'), 'http://54.213.219.198:9080/uat/hspc-java-client-example-spring-mvc/launch/redirect'),
+  ((SELECT id from client_details where client_id = 'test_client'), 'https://sandbox.hspconsortium.org/hspc-java-client-example-spring-mvc/launch/redirect');
 
 INSERT INTO client_scope (owner_id, scope) VALUES
   ((SELECT id from client_details where client_id = 'test_client'), 'launch'),
@@ -24,11 +24,11 @@ INSERT INTO client_grant_type (owner_id, grant_type) VALUES
 
 -- Test Client using JWT
 INSERT INTO client_details (client_id, client_name, jwks_uri, token_endpoint_auth_method, access_token_validity_seconds) VALUES
-	('test_client_jwt', 'Test JWT', 'https://sandbox.hspconsortium.org/dstu2/hsp-reference-authorization/jwk', 'PRIVATE_KEY', 86400);
+	('test_client_jwt', 'Test JWT', 'https://sandbox.hspconsortium.org/dstu2/hspc-reference-authorization/jwk', 'PRIVATE_KEY', 86400);
 
 -- INSERT INTO client_redirect_uri (owner_id, redirect_uri) VALUES
---	((SELECT id from client_details where client_id = 'test_client_jwt'), 'http://localhost:8080/hsp-java-client-example-spring-mvc/launch/redirect'),
---	((SELECT id from client_details where client_id = 'test_client_jwt'), 'http://localhost:8080/hsp-java-client-example-spring-mvc/example');
+--	((SELECT id from client_details where client_id = 'test_client_jwt'), 'http://localhost:8080/hspc-java-client-example-spring-mvc/launch/redirect'),
+--	((SELECT id from client_details where client_id = 'test_client_jwt'), 'http://localhost:8080/hspc-java-client-example-spring-mvc/example');
 
 INSERT INTO client_scope (owner_id, scope) VALUES
 	--	((SELECT id from client_details where client_id = 'test_client_jwt'), 'launch'),
@@ -46,8 +46,8 @@ INSERT INTO client_details (client_id, client_name, client_secret, access_token_
 	('standalone_patient_test_client', 'Standalone Patient Test', 'secret', 86400, 'SECRET_BASIC');
 
 INSERT INTO client_redirect_uri (owner_id, redirect_uri) VALUES
-	((SELECT id from client_details where client_id = 'standalone_patient_test_client'), 'http://localhost:8080/hsp-java-client-example-standalone-patient-confidential-webapp/launch/redirect'),
-	((SELECT id from client_details where client_id = 'standalone_patient_test_client'), 'http://localhost:8080/hsp-java-client-example-standalone-patient-confidential-webapp/myHeightChart');
+	((SELECT id from client_details where client_id = 'standalone_patient_test_client'), 'http://localhost:8080/hspc-java-client-example-standalone-patient-confidential-webapp/launch/redirect'),
+	((SELECT id from client_details where client_id = 'standalone_patient_test_client'), 'http://localhost:8080/hspc-java-client-example-standalone-patient-confidential-webapp/myHeightChart');
 
 INSERT INTO client_scope (owner_id, scope) VALUES
 	((SELECT id from client_details where client_id = 'standalone_patient_test_client'), 'launch'),
@@ -65,8 +65,8 @@ INSERT INTO client_details (client_id, client_name, client_secret, access_token_
 	('standalone_clinical_test_client', 'Standalone Clinician Test', 'secret', 86400, 'SECRET_BASIC');
 
 INSERT INTO client_redirect_uri (owner_id, redirect_uri) VALUES
-	((SELECT id from client_details where client_id = 'standalone_clinical_test_client'), 'http://localhost:8080/hsp-java-client-example-standalone-clinician-confidential-webapp/launch/redirect'),
-	((SELECT id from client_details where client_id = 'standalone_clinical_test_client'), 'http://localhost:8080/hsp-java-client-example-standalone-clinician-confidential-webapp/patientHeightChart');
+	((SELECT id from client_details where client_id = 'standalone_clinical_test_client'), 'http://localhost:8080/hspc-java-client-example-standalone-clinician-confidential-webapp/launch/redirect'),
+	((SELECT id from client_details where client_id = 'standalone_clinical_test_client'), 'http://localhost:8080/hspc-java-client-example-standalone-clinician-confidential-webapp/patientHeightChart');
 
 INSERT INTO client_scope (owner_id, scope) VALUES
 	((SELECT id from client_details where client_id = 'standalone_clinical_test_client'), 'launch'),

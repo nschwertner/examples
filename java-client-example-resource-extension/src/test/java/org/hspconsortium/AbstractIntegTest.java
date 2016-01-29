@@ -1,6 +1,6 @@
 /*
  * #%L
- * hsp-client-ioc-example
+ * hspc-client-ioc-example
  * %%
  * Copyright (C) 2014 - 2015 Healthcare Services Platform Consortium
  * %%

@@ -3,12 +3,12 @@
 
     <parent>
         <groupId>org.hspconsortium</groupId>
-        <artifactId>hsp-examples</artifactId>
+        <artifactId>hspc-examples</artifactId>
         <version>0.9-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>hsp-java-client-example-spring-mvc</artifactId>
+    <artifactId>hspc-java-client-example-spring-mvc</artifactId>
     <packaging>war</packaging>
 
     <name>HSP Examples - Spring MVC</name>
@@ -18,8 +18,8 @@
     <dependencies>
         <dependency>
             <groupId>org.hspconsortium</groupId>
-            <artifactId>hsp-java-client</artifactId>
-            <version>${hsp-java-client.version}</version>
+            <artifactId>hspc-java-client</artifactId>
+            <version>${hspc-java-client.version}</version>
         </dependency>
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>
@@ -82,7 +82,7 @@
                 <version>9.3.0.M2</version>
                 <configuration>
                     <webApp>
-                        <contextPath>/hsp-java-client-example</contextPath>
+                        <contextPath>/hspc-java-client-example</contextPath>
                     </webApp>
                 </configuration>
             </plugin>

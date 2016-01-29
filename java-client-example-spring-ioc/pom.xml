@@ -4,12 +4,12 @@
 
     <parent>
         <groupId>org.hspconsortium</groupId>
-        <artifactId>hsp-examples</artifactId>
+        <artifactId>hspc-examples</artifactId>
         <version>0.9-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>hsp-client-ioc-example</artifactId>
+    <artifactId>hspc-client-ioc-example</artifactId>
     <packaging>jar</packaging>
 
     <name>HSP Examples - Spring IOC</name>
@@ -19,8 +19,8 @@
     <dependencies>
         <dependency>
             <groupId>org.hspconsortium</groupId>
-            <artifactId>hsp-java-client</artifactId>
-            <version>${hsp-java-client.version}</version>
+            <artifactId>hspc-java-client</artifactId>
+            <version>${hspc-java-client.version}</version>
         </dependency>
 
         <dependency>
