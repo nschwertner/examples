@@ -12,8 +12,8 @@
     <artifactId>hspc-client-ioc-example</artifactId>
     <packaging>jar</packaging>
 
-    <name>HSP Examples - Spring IOC</name>
-    <description>HSP Examples</description>
+    <name>HSPC Examples - Spring IOC</name>
+    <description>HSPC Examples</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 
     <dependencies>

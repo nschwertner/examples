@@ -1,6 +1,6 @@
 /*
  * #%L
- * Health Services Platform Consortium - HSP Examples - Spring IOC
+ * Health Services Platform Consortium - HSPC Examples - Spring IOC
  * %%
  * Copyright (C) 2014 - 2015 Healthcare Services Platform Consortium
  * %%

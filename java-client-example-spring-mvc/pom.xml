@@ -11,8 +11,8 @@
     <artifactId>hspc-java-client-example-spring-mvc</artifactId>
     <packaging>war</packaging>
 
-    <name>HSP Examples - Spring MVC</name>
-    <description>HSP Examples</description>
+    <name>HSPC Examples - Spring MVC</name>
+    <description>HSPC Examples</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 
     <dependencies>

@@ -11,8 +11,8 @@
     <artifactId>hspc-java-client-example-standalone-clinician-confidential-webapp</artifactId>
     <packaging>war</packaging>
 
-    <name>HSP Examples - Standalone Clinician Confidential Client</name>
-    <description>HSP Examples</description>
+    <name>HSPC Examples - Standalone Clinician Confidential Client</name>
+    <description>HSPC Examples</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 
     <dependencies>
