@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.hspconsortium</groupId>
+            <groupId>org.hspconsortium.client</groupId>
             <artifactId>hspc-java-client</artifactId>
             <version>${hspc-java-client.version}</version>
         </dependency>
