@@ -16,6 +16,13 @@
     <description>HSPC Client Examples Aggregator POM</description>
     <url>https://healthservices.atlassian.net/wiki/display/HSPC/Healthcare+Services+Platform+Consortium</url>
 
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.org/hspconsortium/examples.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/hspconsortium/examples.git</developerConnection>
+        <url>https://bitbucket.org/hspconsortium/examples.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <properties>
         <java.version>1.7</java.version>
         <hspc-java-client.version>1.0-SNAPSHOT</hspc-java-client.version>
