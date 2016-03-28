@@ -34,7 +34,6 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>${javax.servlet.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
@@ -49,17 +48,14 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
-            <version>${javax.servlet.jstl.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.inject</groupId>

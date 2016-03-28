@@ -39,7 +39,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
 
         <dependency>
@@ -48,10 +47,5 @@
             <version>${commons-validator.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>oro</groupId>
-            <artifactId>oro</artifactId>
-            <version>${oro.version}</version>
-        </dependency>
     </dependencies>
 </project>
