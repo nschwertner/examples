@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.hspconsortium</groupId>
-        <artifactId>hspc-examples</artifactId>
+        <groupId>org.hspconsortium.example</groupId>
+        <artifactId>hspc-example-parent</artifactId>
         <version>0.9-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.hspconsortium</groupId>
+            <groupId>org.hspconsortium.client</groupId>
             <artifactId>hspc-java-client</artifactId>
             <version>${hspc-java-client.version}</version>
         </dependency>
@@ -39,7 +39,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
 
         <dependency>
@@ -48,10 +47,5 @@
             <version>${commons-validator.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>oro</groupId>
-            <artifactId>oro</artifactId>
-            <version>${oro.version}</version>
-        </dependency>
     </dependencies>
 </project>
