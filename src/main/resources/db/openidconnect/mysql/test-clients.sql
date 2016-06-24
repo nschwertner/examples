@@ -7,9 +7,12 @@ INSERT INTO client_details (client_id, client_name, client_secret, access_token_
   ('test_client', 'Test', 'secret', 86400, 'SECRET_BASIC');
 
 INSERT INTO client_redirect_uri (owner_id, redirect_uri) VALUES
-  ((SELECT id from client_details where client_id = 'test_client'), 'http://localhost:8080/hspc-java-client-example-spring-mvc/launch/redirect'),
-  ((SELECT id from client_details where client_id = 'test_client'), 'http://54.213.219.198:9080/uat/hspc-java-client-example-spring-mvc/launch/redirect'),
-  ((SELECT id from client_details where client_id = 'test_client'), 'https://sandbox.hspconsortium.org/hspc-java-client-example-spring-mvc/launch/redirect');
+	((SELECT id from client_details where client_id = 'test_client'), 'http://localhost:8080/hspc-java-client-example-spring-mvc/launch/redirect'),
+	((SELECT id from client_details where client_id = 'test_client'), 'http://54.213.219.198:9080/uat/hspc-java-client-example-spring-mvc/launch/redirect'),
+	((SELECT id from client_details where client_id = 'test_client'), 'https://sandbox.hspconsortium.org/hspc-java-client-example-spring-mvc/launch/redirect'),
+  ((SELECT id from client_details where client_id = 'test_client'), 'http://localhost:8080/quick-start-java-spring-mvc-for-provider/launch/redirect'),
+  ((SELECT id from client_details where client_id = 'test_client'), 'http://54.213.219.198:9080/uat/quick-start-java-spring-mvc-for-provider/launch/redirect'),
+  ((SELECT id from client_details where client_id = 'test_client'), 'https://sandbox.hspconsortium.org/quick-start-java-spring-mvc-for-provider/launch/redirect');
 
 INSERT INTO client_scope (owner_id, scope) VALUES
   ((SELECT id from client_details where client_id = 'test_client'), 'launch'),
